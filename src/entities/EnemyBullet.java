@@ -5,7 +5,7 @@ import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 
-import gameStates.Engine;
+import engine.Engine;
 
 public class EnemyBullet extends Bullet{
 
@@ -22,7 +22,7 @@ public class EnemyBullet extends Bullet{
    private boolean _check;
 
    //Constants
-   private String imgPath = "img/acorn2.png";	
+   private String imgPath = "img/Acorn2.png";	
 
    /**
    *Bullet Class

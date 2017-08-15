@@ -2,12 +2,13 @@ package globals;
 
 public class Globals {
 
-
-	public static boolean DEBUGGING = false;			//Change this variable to true for debugging mode.
-	public static boolean INVINCIBLE = false;		//Setting to true will disable removal of the player entity
-	public static boolean MULTIPLAYER = false;		//Setting to true will enable multiplayer features. TODO: implement multiplayer features
+	//TESTING VAEIABLES
+	public static final boolean DEBUGGING = false;			//Change this variable to true for debugging mode.
+	public static final boolean INVINCIBLE = false;			//Setting to true will disable removal of the player entity
+	public static final boolean MULTIPLAYER = false;		//Setting to true will enable multiplayer features. TODO: implement multiplayer features
 
 	
+	//GAME VARIABLES
 	public static final String GAME_TITLE = "Fruit Shooter";
 	public static final String GAME_VERSION = "1.0a";
 	
@@ -35,18 +36,19 @@ public class Globals {
 	
 	//Variables for timer based game
 	public static final int TIMER = 5000;			// Changed for testing purposes. Should be 1000.
-	public static final int BossTimer = 60000;		// Changed for testing purposes. Should be 60000.
+	public static final int BossTimer = 30000;		// How many seconds between boss spawns
 	
 	//GAMEPLAY MECHANICS
-	public static final int gruntValue = 100;
-	public static final int bossValue = 1000;			
+	public static final int gruntValue = 100;		//Point value for grunts
+	public static final int bossValue = 2000;		//Point value for bosses
 	public static final int LevelChange = 61000;		// Changed for testing purposes. Should be 61000.
 	public static final float LevelChangeAmount = 0.25f; // Determine how much the health changes
 	public static final float RandDelay = 1000;			//Time between spawning of random movement enemies
 	public static float Delay = 1000f;			//Time between spawning of enemies once spawning method is triggered by a boolean
 	public static float reset = 5500f;		//Time until the spawning method is reset
 	public static final int spawnMethods = 10;		//Variable that determines how many spawning methods are available to be used. Increasing this will increase the number of possibilities that the random number generator can pick
-
+	public static final float DEFAULT_HEALTH_POWERUP_VALUE = 30f;
+	
 	//GAME STATE IDS
 	public static final int MAIN_SCREEN_STATE_ID = 999;
 	public static final int CHARACTER_SELECT_STATE_ID = 1000;
